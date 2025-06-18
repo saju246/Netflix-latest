@@ -1,139 +1,244 @@
-@font-face {
-    font-family: 'MyFont';
-    src: url('fonts/netflix-sans-font/NetflixSans-Regular.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+  @font-face {
+            font-family: 'MyFont';
+            src: url('fonts/netflix-sans-font/NetflixSans-Regular.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-@font-face {
-    font-family: 'MyFont-bold';
-    src: url('fonts/netflix-sans-font/NetflixSans-Bold.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+        @font-face {
+            font-family: 'MyFont-bold';
+            src: url('fonts/netflix-sans-font/NetflixSans-Bold.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'MyFont'
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'MyFont', Arial, sans-serif;
+        }
 
-.landing-page {
-    padding-left: 350px;
-    padding-right: 350px;
-    height: 100vh;
-    background: url("./images/landing-hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-}
+        .landing-page {
+            padding-left: 350px;
+            padding-right: 350px;
+            height: 100vh;
+            background: url("./images/landing-hero-bg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
+        }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
-.navbar {
-    z-index: 2;
-    font-weight: bold;
-}
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+        
+        .navbar {
+            z-index: 2;
+            font-weight: bold;
+        }
 
-.signin-box {
-  background-color: rgba(0, 0, 0, 0.5); 
-  width: 100%;
-  max-width: 500px;
-  z-index: 3;
-  height: 700px;
-  width: 450px;
-}
+        .signin-box {
+            background-color: rgba(0, 0, 0, 0.5); 
+            width: 100%;
+            max-width: 500px;
+            z-index: 3;
+            height: 700px;
+            width: 450px;
+        }
 
-.input-netflix {
-  background-color: #000000 !important;
-  color: white !important;
-  border: none;
-  height: 50px;
-}
+        .input-netflix {
+            background-color: #000000 !important;
+            color: white !important;
+            border: none;
+            height: 50px;
+        }
 
-.input-netflix::placeholder {
-  color: #8c8c8c !important;
-}
+        .input-netflix::placeholder {
+            color: #8c8c8c !important;
+        }
 
-.input-netflix:focus {
-  background-color: #444;
-  box-shadow: none;
-  color: white;
-}
+        .input-netflix:focus {
+            background-color: #444;
+            box-shadow: none;
+            color: white;
+        }
 
+        .sign-in{
+            background-color: #E50914 !important;
+        }
 
-.sign-in{
-    background-color: #E50914 !important;
-}
+        .or{
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+        
+        .sign-in-code-btn{
+            text-align: center;
+            background-color: rgba(63, 63, 63, 0.7);
+            border-radius: 4px;
+            height: 40px; 
+            border: none;
+            font-weight: bold;
+            color: white;
+        }
 
-.or{
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-}
-.sign-in-code-btn{
-    text-align: center;
-    background-color: rgba(63, 63, 63, 0.7);
-    border-radius: 4px;
-    height: 40px; 
-    border: none;
-    font-weight: bold;
-    color: white;
-}
+        /***************************************************************88 foooter *******************************************************************88*/
 
+        footer{
+            padding-left: 350px;
+            padding-right: 350px;
+            background-color: black;
+            padding-top: 2px;
+            height: 40vh;   
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            color: #B3B3B3;
+            padding-top: 40px;
+        }
 
-/***************************************************************88 foooter *******************************************************************88*/
+        .footer-links{
+            display: flex;
+            gap: 150px;
+        }
 
+        .footer-links ul{
+            list-style: none;
+        }
 
-footer{
-  padding-left: 350px;
-    padding-right: 350px;
-    background-color: black;
-    padding-top: 2px;
-    height: 40vh;   
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    color: #B3B3B3;
-    padding-top: 40px;
-}
+        .footer-links ul li a{
+            list-style: none;
+            text-decoration: none;
+            color: #B3B3B3;
+            text-decoration: underline;
+        }
 
-.footer-links{
-    display: flex;
-    gap: 150px;
-}
+        .dropdown-button {
+            border-color: #545454 !important;
+        }
 
-.footer-links ul{
-    list-style: none;
-    
-}
+        .dropdown-button:hover {
+            background-color: transparent !important;
+            color: #ffff !important;
+            border-color: #f8f9fa !important;
+            box-shadow: none !important;
+        }
 
-.footer-links ul li a{
-    list-style: none;
-    text-decoration: none;
-    color: #B3B3B3;
-    text-decoration: underline;
-}
+        /* RESPONSIVE STYLES - Mobile Optimization */
+        @media (max-width: 768px) {
+            .landing-page {
+                padding-left: 20px;
+                padding-right: 20px;
+                min-height: 100vh;
+            }
 
+            .signin-box {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                min-height: 500px;
+                padding: 30px 20px;
+            }
 
+            footer {
+                padding-left: 20px;
+                padding-right: 20px;
+                height: auto;
+                min-height: 30vh;
+                gap: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
 
-.dropdown-button {
-    border-color: #545454 !important;
-}
+            .footer-links {
+                flex-direction: column;
+                gap: 30px;
+            }
 
-.dropdown-button:hover {
-    background-color: transparent !important;
-    color: #ffff !important;
-    border-color: #f8f9fa !important;
-    box-shadow: none !important;
-}
+            .footer-links ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .landing-page {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .signin-box {
+                padding: 25px 15px;
+                min-height: 450px;
+            }
+
+            .input-netflix {
+                height: 45px;
+                font-size: 14px;
+            }
+
+            footer {
+                padding-left: 15px;
+                padding-right: 15px;
+                gap: 25px;
+                padding-top: 25px;
+            }
+
+            .footer-links ul {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .footer-links ul li a {
+                font-size: 14px;
+            }
+        }
+
+        /* Tablet adjustments */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .landing-page {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            .signin-box {
+                width: 400px;
+            }
+
+            footer {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            .footer-links {
+                gap: 80px;
+            }
+        }
+
+        /* Large tablet / small desktop */
+        @media (min-width: 1025px) and (max-width: 1200px) {
+            .landing-page {
+                padding-left: 200px;
+                padding-right: 200px;
+            }
+
+            footer {
+                padding-left: 200px;
+                padding-right: 200px;
+            }
+
+            .footer-links {
+                gap: 100px;
+            }
+        }
