@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/netflix-sans-font/NetflixSans-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont-bold';
+    src: url('fonts/netflix-sans-font/NetflixSans-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MyFont'
+}
+
+.landing-page {
+    padding-left: 350px;
+    padding-right: 350px;
+    height: 100vh;
+    background: url("./images/landing-hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.navbar {
+    z-index: 2;
+    font-weight: bold;
+}
+
+.btn {
+    width: 131px;
+    height: 32px;
+    border-radius: 8;
+    font-weight: bold !important;
+}
+
+.dropdown-button {
+    border-color: #545454 !important;
+}
+
+.dropdown-button:hover {
+    background-color: transparent !important;
+    color: #ffff !important;
+    border-color: #f8f9fa !important;
+    box-shadow: none !important;
+}
+
+
+
+.signin {
+    height: 32px;
+    width: 77px;
+    border-radius: 8;
+    background-color: #E50914 !important;
+    font-size: 14px;
+    font-weight: bold !important;
+}
+
+.img-lang {
+
+    filter: brightness(100%) saturate(100%);
+    margin-right: 5px;
+    align-content: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    max-width: 900px;
+    height: 500px;
+    /* width: 950px; */
+    color: #ffffff !important;
+    z-index: 3;
+    gap: 90px;
+}
+
+.heading-hero h1 {
+    font-family: 'MyFont-bold';
+    font-weight: bolder;
+    font-size: 68px;
+    color: #ffffff !important;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.subhead-hero h4 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.p-hero p {
+    text-align: center;
+    font-size: 17px !important;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    max-width: 650px;
+    justify-self: center;
+}
+
+.input-group img {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.form-control {
+    width: 350px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-color: #808080 !important;
+    font-size: 16px !important;
+    margin-right: 10px;
+}
+
+.form-control::placeholder {
+    color: #BCBCBC !important;
+}
+
+.get-started {
+    width: 210px;
+    height: 55px;
+    background-color: #E50914 !important;
+    color: #ffffff;
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+
+/********************************************************************* page 2 ******************************************************88*/
+.trending-now {
+    padding-left: 350px;
+    padding-right: 350px;
+    background-color: black;
+    padding-top: 2px;
+    height: 60vh;
+}
+
+.trending-title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+  min-width: 300px;
+  flex: 0 0 auto;
+  transition: transform 0.3s;
+}
+
+.card img {
+    width: 100% !important;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.carousel-btn.left {
+    left: 0;
+    display: none;
+}
+
+.carousel-btn.right {
+    right: 0;
+}
+
+/* .image-wrapper {
+  position: relative;
+}
+.image-wrapper .number {
+  position: absolute;
+  bottom: 30px;
+  left: -15px;
+  height: 90px;
+  width: 40px !important;
+   filter: 
+    drop-shadow(1px 0 0 white)
+    drop-shadow(-1px 0 0 white)
+    drop-shadow(0 1px 0 white)
+    drop-shadow(0 -1px 0 white);
+    filter: grayscale(1) brightness(0) invert(1);
+
+
+} */
+
+
+/**************************************************** page 3 *******************************************************************/
+
+.more-reason-to-join{
+     padding-left: 350px;
+    padding-right: 350px;
+    background-color: black;
+    padding-top: 2px;
+    height: 60vh;
+}
+
+
+
+.more-reason-title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.reason-card {
+      background-color: #141414;
+      border: none;
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: left;
+      transition: transform 0.3s ease;
+      height: 350px !important;
+      color: white;
+      position: relative;
+    }
+
+
+    .reason-card:hover {
+      transform: translateY(-5px);
+    }
+
+   
+
+    .reason-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    
+
+    
+    .icon{
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+    }
+    .reason-description {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+
+    /******************************************* page 4 **************************************************/
+
+
+    .faq-section {
+        padding-left: 350px;
+    padding-right: 350px;
+    background-color: black;
+    padding-top: 2px;
+    height: 100vh;
+    }
+
+    .faq-title {
+        font-family: 'MyFont-bold';
+        color: white;
+    font-size: 30px !important;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    }
+
+    .accordion-button {
+      background-color:#2A2A2A !important;
+      color: white !important;
+      font-size: 24px !important;
+      padding: 1.2rem;
+      border: 0 !important;
+      height: 80px;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #303030;
+      color: white;
+      border: 0 !important;
+
+    }
+
+    .accordion-item {
+      background-color: #303030;
+      border: none;
+      margin-bottom: 1rem;
+       border: 0 !important;
+    }
+
+    .accordion-body {
+      background-color: #303030;
+      color: #ddd;
+      font-size: 24px;
+      padding: 1.2rem;
+       border: 0 !important;
+
+
+    }
+
+    .accordion-button::after {
+      filter: invert(1);
+    }
+
+
+
+    /* ***********************************************************page 6 *********************************************************/
+
+
+.create-membership{
+    margin-top: 60px;
+    color: white;
+}
+
+.p-create-membership p {
+    text-align: center;
+    font-size: 17px !important;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    max-width: 650px;
+    justify-self: center;
+}
+
+.input-group img {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.form-control {
+    width: 350px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-color: #808080 !important;
+    font-size: 16px !important;
+    margin-right: 10px;
+}
+
+.form-control::placeholder {
+    color: #BCBCBC !important;
+}
+
+.get-started {
+    width: 210px;
+    height: 55px;
+    background-color: #E50914 !important;
+    color: #ffffff;
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+
+/******************************************************* footer ************************************************************************** */
+
+footer{
+  padding-left: 350px;
+    padding-right: 350px;
+    background-color: black;
+    padding-top: 2px;
+    height: 60vh;   
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #B3B3B3;
+}
+
+.footerlinks{
+    display: flex;
+    gap: 150px;
+}
+
+.footerlinks ul{
+    list-style: none;
+    
+}
+
+.footerlinks ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #B3B3B3;
+    text-decoration: underline;
+}
+
+.questions span{
+    text-decoration: underline;
+}
+
+.learn-more span{
+    text-decoration: underline;
+    color: blue;
+}
